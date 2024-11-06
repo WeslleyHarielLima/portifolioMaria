@@ -17,7 +17,37 @@ body {
     font-weight: 600;
     line-height: 42px;
     text-align: left;
-text-decoration-line: underline;
-color:  #070F18;
+    text-decoration-line: underline;
+    color: #070F18;
+    margin-top: 40px;
+
+}
+
+#menu{
+    text-align: right;
+margin-top: 49px;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+#menu ul {
+    list-style-type: none;
+    /*retira a bolinha*/
+    padding: 0;
+    margin: 0;
+
+}
+
+#menu li {
+    display: inline-block;
+    /*os itens ficam lado a lado*/
+    margin-left: 20px;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+    color: #070F18;
 
 }
