@@ -1,0 +1,23 @@
+body {
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.container {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+    /*frame-fr:ocupando o maximo de espaço possivel da pagina*/
+
+}
+
+#header {
+    font-family: "Poppins", sans-serif;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 42px;
+    text-align: left;
+text-decoration-line: underline;
+color:  #070F18;
+
+}
