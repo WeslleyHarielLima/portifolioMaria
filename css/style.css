@@ -23,14 +23,16 @@ body {
 
 }
 
-#menu{
+#menu {
     text-align: right;
-margin-top: 49px;
+    margin-top: 49px;
 }
-a{
+
+a {
     color: black;
     text-decoration: none;
 }
+
 #menu ul {
     list-style-type: none;
     /*retira a bolinha*/
@@ -50,4 +52,48 @@ a{
     text-align: center;
     color: #070F18;
 
+}
+
+#buttonCta {
+    background-color: #1F7CFF;
+    color: white;
+    border-radius: 50px;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    padding: 10px 25px 10px 25px ;
+   
+
+}
+#headerCta{
+font-family: Poppins;
+font-size: 16px;
+font-weight: 400;
+line-height: 32px;
+text-align: left;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+margin-top: 60px;
+
+}
+headerCta h1{
+    font-family: Poppins;
+    font-style: normal;
+font-size: 60px;
+font-weight: bold;
+text-align: left;
+margin-top: 60px;
+
+}
+#headerImg{
+    margin-left: 42px;
+ margin-top: 60px;
+
+}
+headerImg{
+    height: 100%;
 }
