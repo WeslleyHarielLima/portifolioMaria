@@ -10,77 +10,92 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
     <title>Portfólio Maria</title>
 </head>
 
 <body>
-    <div class="container">
+    <!-- Cabeçalho -->
+    <header class="container">
         <div id="header">
             Portfólio
         </div>
         <div id="menu">
             <ul>
-                <li> <a href="#">Meus Serviços</a></li>
+                <li><a href="#">Meus Serviços</a></li>
                 <li><a href="#">Contato</a></li>
                 <li><a href="#">Portfólio</a></li>
             </ul>
         </div>
-    </div>
-    <div class="container">
+    </header>
+
+    <!-- Seção de Chamada para Ação -->
+    <section class="container">
         <div id="headerCta">
-            <h1>Olá, meu nome<br>
-                é Maria
-            </h1>
-            <p class="gray">Sou programadora e gostaria de apresentar meu<br>
-                trabalho para você através deste portfólio.</p>
-            <br>
-            <a id="buttonCta" href="">Meus Serviços</a>
+            <h1>Olá, meu nome<br> é Maria</h1>
+            <p class="gray">Sou programadora e gostaria de apresentar meu<br> trabalho para você através deste portfólio.</p>
+            <a id="buttonCta" href="#services">Meus Serviços</a>
         </div>
 
-        <div id="headerImg">
-            <img src="img/header.svg">
+        <div class="headerImg">
+            <img src="img/header.svg" alt="Imagem ilustrativa de cabeçalho">
         </div>
-    </div>
-    <div class="container" id="clients">
+    </section>
+
+    <!-- Seção de Clientes -->
+    <section class="container" id="clients">
         <div id="headerClientText">
-            Alguns dos<br>
-            meus clientes
+            Alguns dos<br> meus clientes
         </div>
         <div class="headerLogo">
-            <img src="img/apple.svg" alt="Logo Apple" srcset="">
+            <img src="img/apple.svg" alt="Logo Apple">
         </div>
         <div class="headerLogo">
-            <img src="img/slack.svg" alt="Logo slack" srcset="">
+            <img src="img/slack.svg" alt="Logo Slack">
         </div>
         <div class="headerLogo">
-            <img src="img/spotify.svg" alt="Logo Spotify" srcset="">
+            <img src="img/spotify.svg" alt="Logo Spotify">
         </div>
-    </div>
-    <div class="container">
-        <div id="services">
-            <h3 class="red">Conheça</h2>
-            <h1 class="black">Meus Serviços</h1>
-           <p id="textCta">Vou ajudar a sua empresa<br> a alcançar grandes resultados.</p>
-        </div>
+    </section>
 
-    </div>
-    <div class="container" id="service">
+    <!-- Seção de Serviços -->
+    <section class="container" id="services">
+        <h3 class="red">Conheça</h3>
+        <h1 class="black">Meus Serviços</h1>
+        <p id="textCta">Vou ajudar a sua empresa<br> a alcançar grandes resultados.</p>
+    </section>
+
+    <!-- Seção de Detalhes dos Serviços -->
+    <section class="container" id="service">
         <div class="textCenter">
-            <img src="img/consultoria.svg" alt="Icone Consultoria">
+            <img src="img/consultoria.svg" alt="Ícone Consultoria">
             <h3>Consultoria</h3>
             <p class="gray">Te ajudo a organizar sua empresa e melhorar seus resultados.</p>
         </div>
         <div class="textCenter">
-            <img src="img/email.svg" alt="Icone Email">
+            <img src="img/email.svg" alt="Ícone Email Marketing">
             <h3>Email Marketing</h3>
             <p class="gray">Gerenciar campanhas é difícil. Conte comigo para te ajudar.</p>
         </div>
         <div class="textCenter">
-            <img src="img/sites.svg" alt="Icone Sites">
+            <img src="img/sites.svg" alt="Ícone Criação de Sites">
             <h3>Criação de Sites</h3>
             <p class="gray">Desenvolvo seu site inteiro do zero e te entrego prontinho.</p>
         </div>
-    </div>
+    </section>
+
+    <!-- Seção de Contato -->
+    <section>
+        <div id="contactImg">
+            <img src="img/contact.svg" alt="Imagem de contato com ilustração de um formulário">
+        </div>
+        <div id="contactForm">
+            <h2 class="red">Economize seu tempo</h2>
+            <h1 class="black">Ganhe mais dinheiro</h1>
+            <p class="gray">Digite aqui seu endereço de e-mail. Eu entrarei em contato para fornecer um diagnóstico gratuito.</p>
+        </div>
+    </section>
+
 </body>
 
 </html>

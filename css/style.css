@@ -1,31 +1,56 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     margin-left: 15%;
     margin-right: 15%;
 }
 
 .container {
+
+
     display: grid;
     grid-auto-flow: column;
-    grid-auto-columns: 1fr;
-    /*frame-fr:ocupando o maximo de espaço possivel da pagina*/
+  grid-auto-columns: 1fr;
 
 }
 
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+}
+
 #header {
-    font-family: "Poppins", sans-serif;
     font-size: 28px;
     font-weight: 600;
     line-height: 42px;
     text-align: left;
     text-decoration-line: underline;
     color: #070F18;
-    margin-top: 40px;
-
 }
 
 #menu {
-    text-align: right;
-    margin-top: 49px;
+    margin-top: 20px;
+}
+
+#menu ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+}
+
+#menu li {
+    font-size: 16px;
+    font-weight: 400;
+    color: #070F18;
 }
 
 a {
@@ -33,146 +58,163 @@ a {
     text-decoration: none;
 }
 
-#menu ul {
-    list-style-type: none;
-    /*retira a bolinha*/
-    padding: 0;
-    margin: 0;
-
+/* Chamada para Ação (CTA) */
+#headerCta {
+    text-align: center;
+    margin-top: 60px;
 }
 
-#menu li {
-    display: inline-block;
-    /*os itens ficam lado a lado*/
-    margin-left: 20px;
-    font-family: Poppins;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 24px;
-    text-align: center;
-    color: #070F18;
+#headerCta h1 {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
 
+.gray {
+    color: #575455;
+    font-size: 16px;
+    line-height: 32px;
+    text-align: center;
 }
 
 #buttonCta {
     background-color: #1F7CFF;
     color: white;
     border-radius: 50px;
-    font-family: Poppins;
     font-size: 16px;
     font-weight: 600;
-    line-height: 24px;
-    text-align: center;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
-    padding: 10px 25px 10px 25px;
-
-
-
-
+    padding: 10px 25px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 30px;
 }
 
-#headerCta {
-    font-family: Poppins;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 32px;
-    text-align: left;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
-    margin-top: 100px;
-
-}
-
-#headerCta h1 {
-    font-family: Poppins;
-    font-style: normal;
-    font-size: 40px;
-    font-weight: bold;
-    text-align: left;
-    margin-top: 60px;
-
-
-}
-
-#headerImg {
-    margin-left: 42px;
-    margin-top: 60px;
-
-}
-
-#headerImg {
-    height: 100%;
-}
-
-.headerLogo {
+.headerImg {
+    margin-top: 40px;
     text-align: center;
 }
 
+.headerImg img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+}
+
+/* Seção de Clientes */
 #clients {
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 80px;
+    text-align: center;
 }
 
 #headerClientText {
-    font-family: Poppins;
-    font-size: 15px;
-    font-style: normal;
-    line-height: 24px;
-    text-align: left;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
-
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 30px;
 }
 
-h3.red {
-    font-family: Poppins;
+.headerLogo {
+    display: inline-block;
+    margin: 10px;
+}
+
+.headerLogo img {
+    width: 100px;
+    height: auto;
+}
+
+/* Seção de Serviços */
+#services {
+    margin-top: 80px;
+    text-align: center;
+}
+
+#services h3.red {
     font-size: 16px;
     font-weight: 700;
-    line-height: 24px;
-    text-align: center;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
     color: #F75C4E;
 }
 
-h1.black {
-    font-family: Poppins;
+#services h1.black {
     font-size: 36px;
     font-weight: 700;
-    line-height: 54px;
-    text-align: center;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
     color: black;
-    margin: 0px;
+    margin-bottom: 20px;
 }
-.textCenter{
+
+#services #textCta {
+    font-size: 16px;
+    line-height: 32px;
+    color: #575455;
+    margin-top: 10px;
+}
+
+/* Cards de Serviços */
+#service {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 60px;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.textCenter {
     text-align: center;
-    margin-top: 30px;
+    max-width: 250px;
+    margin-bottom: 30px;
 }
-#service .textCenter h3 {
-    font-family: Poppins;
-    font-size: 20px;
+
+.textCenter img {
+    width: 80px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.textCenter h3 {
+    font-size: 18px;
     font-weight: 600;
-    line-height: 30px;
+    color: #070F18;
+    margin-bottom: 10px;
+}
+
+.textCenter p.gray {
+    color: #575455;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+/* Seção de Contato */
+#contactImg {
+    margin-top: 60px;
     text-align: center;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
+}
+
+#contactImg img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+}
+
+#contactForm {
+    margin-top: 40px;
+    text-align: center;
+}
+
+#contactForm h2.red {
+    font-size: 20px;
+    font-weight: 700;
+    color: #F75C4E;
+}
+
+#contactForm h1.black {
+    font-size: 36px;
+    font-weight: 700;
     color: black;
+    margin: 20px 0;
 }
 
-#
+#contactForm p.gray {
+    font-size: 16px;
+    color: #575455;
+    line-height: 32px;
+}
 
-p.gray{
-    font-family: Poppins;
-font-style: normal;
-font-weight: normal;
-font-size: 16px;
-line-height: 32px;
-color: #575455;
-text-align: center;
-}
-#textCta{
-    text-align: left;
-}
