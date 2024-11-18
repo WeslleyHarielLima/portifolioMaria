@@ -28,6 +28,7 @@ header {
 }
 
 #header {
+    
     font-size: 28px;
     font-weight: 600;
     line-height: 42px;
@@ -125,7 +126,7 @@ a {
 /* Seção de Serviços */
 #services {
     margin-top: 80px;
-    text-align: center;
+  
 }
 
 #services h3.red {
