@@ -10,7 +10,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
-        <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Portfólio Maria</title>
 </head>
 
@@ -33,7 +33,8 @@
     <div class="container">
         <div id="headerCta">
             <h1>Olá, meu nome<br> é Maria</h1>
-            <p class="gray">Sou programadora e gostaria de apresentar meu<br> trabalho para você através deste portfólio.</p>
+            <p class="gray">Sou programadora e gostaria de apresentar meu<br> trabalho para você através deste
+                portfólio.</p>
             <a id="buttonCta" href="#services">Meus Serviços</a>
         </div>
 
@@ -58,25 +59,29 @@
         </div>
     </div>
 
-    <!-- Seção de Serviços -->
-
+    <!-- Seção de Serviços>-->
+    <div class="" id="services">
+        <h3 class="red">Conheça</h3>
+        <h1 class="black">Meus Serviços</h1>
+        <p id="textCta">Vou ajudar a sua empresa<br> a alcançar grandes resultados.</p>
+    </div>
 
     <!-- Seção de Detalhes dos Serviços -->
     <div class="container" id="service">
         <div class="textCenter">
             <img src="img/consultoria.svg" alt="Ícone Consultoria">
             <h3>Consultoria</h3>
-            <p class="gray">Te ajudo a organizar sua empresa e melhorar seus resultados.</p>
+            <p class="textCenter p gray">Te ajudo a organizar sua empresa e melhorar seus resultados.</p>
         </div>
         <div class="textCenter">
             <img src="img/email.svg" alt="Ícone Email Marketing">
             <h3>Email Marketing</h3>
-            <p class="gray">Gerenciar campanhas é difícil. Conte comigo para te ajudar.</p>
+            <p class="textCenter p gray">Gerenciar campanhas é difícil. Conte comigo para te ajudar.</p>
         </div>
         <div class="textCenter">
             <img src="img/sites.svg" alt="Ícone Criação de Sites">
             <h3>Criação de Sites</h3>
-            <p class="gray">Desenvolvo seu site inteiro do zero e te entrego prontinho.</p>
+            <p class="textCenter p gray">Desenvolvo seu site inteiro do zero e te entrego prontinho.</p>
         </div>
     </div>
 
@@ -86,12 +91,36 @@
             <img src="img/contact.svg" alt="Imagem de contato com ilustração de um formulário">
         </div>
         <div id="contactForm">
-            <h2 class="red">Economize seu tempo</h2>
-            <h1 class="black">Ganhe mais dinheiro</h1>
-            <p class="gray">Digite aqui seu endereço de e-mail. Eu entrarei em contato para fornecer um diagnóstico gratuito.</p>
+            <h2 class="contactForm h2 red">Economize seu tempo</h2>
+            <h1 class="contactForm h1 black">Ganhe mais dinheiro</h1>
+            <p class=" contactForm p gray">Digite aqui seu endereço de e-mail. Eu entrarei em <br>
+                contato para fornecer um diagnóstico gratuito.</p>
+            <form action="https://formspree.io/f/mldelnby" method="post">
+                <p><input placeholder="E-mail" type="text" id="inputEmail" name-="contctEmail" required="required"></p>
+                <button type="submit"> Enviar</button>
+            </form>
+
         </div>
     </div>
+    <!-- Seção de portifolio-->
+    <div class="container" id="portifolioTitle">
+        <div>
+            <h2 class="portifolioRed">Conheça o meu</h2>
+            <h1 class="portifolioBlack">portifolio</h1>
+        </div>
+    </div>
+    <div class="container">
+        <div class="portifolioImg">
+            <img src="img/portifolio1.svg">
+        </div>
 
+        <div class="portifolioImg">
+            <img src="img/portifolio2.svg">
+        </div>
+        <div class="portifolioImg">
+            <img src="img/portifolio3.svg">
+        </div>
+    </div>
 </body>
 
 </html>
